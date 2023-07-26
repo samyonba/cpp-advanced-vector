@@ -496,9 +496,6 @@ inline typename Vector<T>::iterator Vector<T>::Emplace(const_iterator pos, Args&
             {
                 std::move_backward(begin() + id, end() - 1, end());
                 data_[id] = std::move(obj);
-                {
-                    data_[id] = obj;
-                }*/
             }
         }
         else
